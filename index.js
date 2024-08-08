@@ -21,10 +21,10 @@ const app = express();
 // const http = require("http");
 
 const port = process.env.PORT || 6000;
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 

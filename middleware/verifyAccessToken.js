@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const createError = require("http-errors");
 
 const getRoleFromToken = (token) => {
-  const decoded = jwt.verify(token, process.env.JWT_SECRET);
+  const decoded = jwt.verify(token, "rahasia_negara");
   return decoded.role;
 };
 
@@ -13,7 +13,7 @@ const verifyUser = (requiredRole) => {
     }
 
     const token = req.headers["authorization"];
-    jwt.verify(token, process.env.JWT_SECRET, (err, payload) => {
+    jwt.verify(token, "rahasia_negara", (err, payload) => {
       if (err) {
         const message = err.name === "JsonWebTokenError" ? "Unauthorized" : err.message;
         return next(createError.Unauthorized(message));

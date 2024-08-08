@@ -10,7 +10,7 @@ const generateLogToken = (user) => {
       image: user.image,
       // saldo: user.saldo,
     },
-    "rahasia-negara" || "****",
+    "rahasia_negara",
     { expiresIn: "7d" }
   );
 };
