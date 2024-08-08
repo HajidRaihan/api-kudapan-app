@@ -10,7 +10,7 @@ const generateLogToken = (user) => {
       image: user.image,
       // saldo: user.saldo,
     },
-    process.env.JWT_SECRET || "****",
+    "rahasia-negara" || "****",
     { expiresIn: "7d" }
   );
 };
