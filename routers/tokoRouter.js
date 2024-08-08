@@ -6,7 +6,7 @@ const {
   updateStore,
   getStoreById,
   changeTokoStatus,
-} = require("../Controller/storeController");
+} = require("../controller/storeController");
 const multer = require("multer");
 const path = require("path");
 const upload = require("../middleware/multerMiddleware");
