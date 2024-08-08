@@ -1,3 +1,5 @@
+dotenv.config();
+
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -15,7 +17,6 @@ require("./db/mongoose");
 const morgan = require("morgan");
 const { verifyUser } = require("./middleware/verifyAccessToken");
 
-dotenv.config();
 const app = express();
 // const http = require("http");
 
@@ -54,6 +55,8 @@ app.use((error, req, res, next) => {
   console.log(error);
 });
 
-app.listen(port, () => {
-  console.log(`server running at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`server running at http://localhost:${port}`);
+// });
+
+module.exports = app;
