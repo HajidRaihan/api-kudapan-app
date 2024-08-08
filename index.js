@@ -1,8 +1,8 @@
-// dotenv.config();
+const dotenv = require("dotenv");
+dotenv.config();
 
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
 const userRouter = require("./routers/userRouter");
 const tokoRouter = require("./routers/tokoRouter");
 const produkRouter = require("./routers/produkRouter");
