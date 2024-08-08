@@ -6,7 +6,7 @@ const {
   getProdukById,
   deleteProduk,
   editProduk,
-} = require("../Controller/produkController");
+} = require("../controller/produkController");
 const upload = require("../middleware/multerMiddleware");
 const { verifyUser } = require("../middleware/verifyAccessToken");
 
