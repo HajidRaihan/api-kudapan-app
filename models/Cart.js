@@ -21,10 +21,6 @@ const keranjangSchema = new mongoose.Schema({
     enum: ["diterima", "diproses", "Selesai"],
     default: "diterima",
   },
-
-  // produk: [pesananSchema],
 });
-
-// const Keranjang = mongoose.model("Keranjang", keranjangSchema);
 
 module.exports = keranjangSchema;

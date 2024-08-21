@@ -16,11 +16,6 @@ const historySchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  // status: {
-  //   type: String,
-  //   enum: ["diterima", "diproses", "Selesai"],
-  //   default: "diterima",
-  // },
 });
 
 module.exports = historySchema;

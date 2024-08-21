@@ -40,7 +40,7 @@ const orderSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
 module.exports = orderSchema;

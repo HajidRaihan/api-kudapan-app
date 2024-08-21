@@ -14,6 +14,7 @@ const { verifyUser } = require("../middleware/verifyAccessToken");
 router.post("/add/:userId/:meja", verifyUser("customer"), addOrder);
 router.post("/add/single/:userId/:meja", addSingleOrder);
 router.get("/get/:userId", getOrderUser);
+router.get("/get/today/:userId", getOrderUserToday);
 router.get("/get/detail/:id", getOrderById);
 router.post("/payment/:userId/:orderId", orderPayment);
 router.post("/status/:userId/:orderId", changeStatusOrder);

@@ -3,20 +3,20 @@ const mongoose = require("mongoose");
 const pesananSchema = new mongoose.Schema({
   nama: {
     type: String,
-    // required: true,
+    required: true,
   },
   harga: {
     type: Number,
-    // required: true,
+    required: true,
   },
   image: {
     type: String,
-    // required: true,
+    required: true,
   },
   jumlah: {
     type: Number,
     default: 1,
-    // required: true,
+    required: true,
   },
   catatan: {
     type: String,
@@ -25,7 +25,7 @@ const pesananSchema = new mongoose.Schema({
   total: {
     type: Number,
     default: 0,
-    // required: true,
+    required: true,
   },
 });
 

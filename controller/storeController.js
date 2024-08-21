@@ -127,6 +127,8 @@ const getAllStore = async (req, res) => {
       })
     );
 
+    console.table(toko);
+
     res.json(toko);
   } catch (error) {
     console.error("Gagal mendapatkan toko:", error);
